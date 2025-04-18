@@ -1,12 +1,45 @@
-import React from 'react';
+"use client"
+import Link from 'next/link';
+import { navData } from '../libs/data';
+import { CgMenuLeft } from "react-icons/cg";
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [openMenu, setOpenMenu] = useState(false);
     return (
-        <div className=' text-slate-500 text-5xl font-bold px-4 md:px-12 py-8 w-full flex '>
-            <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-[#0C7CBA] to-[#1F516C] font-bold'>
+        <div className='text-slate-500 font-bold px-4 md:px-12 py-8 w-full flex justify-between items-center '>
+            <div>
+                <Link href={'/'} className='text-transparent text-5xl bg-clip-text bg-gradient-to-r from-[#0C7CBA] to-[#1F516C] font-bold'>TeamP</Link>
+            </div>
+            <div className='border backdrop-blur-sm py-2 px-5 rounded-lg fixed right-12 hidden md:block'>
+                <ul className='flex gap-3'>
+                    {
+                        navData.map(navItem =>
+                            <li className='hover:bg-blue-500 px-2 text-slate-200 rounded-lg py-1' key={navItem.id}>
+                                <Link href={navItem.link}>{navItem.title}</Link>
+                            </li>
+                        )
+                    }
+                </ul>
+            </div>
 
-                Team
-            </h1>
+            {/* responsive navbar */}
+            <div className='md:hidden block fixed right-12'>
+                <div className='relative' >
+                    <CgMenuLeft onClick={() => setOpenMenu(!openMenu)} className='text-2xl text-white'></CgMenuLeft>
+                    {
+                        openMenu && <ul className='absolute top-6 right-0 border backdrop-blur-sm rounded-lg'>
+                            {
+                                navData.map(navItem =>
+                                    <li onClick={() =>setOpenMenu(false)} className='hover:bg-blue-500 px-2 text-slate-200 rounded-lg py-1' key={navItem.id}>
+                                        <Link href={navItem.link}>{navItem.title}</Link>
+                                    </li>
+                                )
+                            }
+                        </ul>
+                    }
+                </div>
+            </div>
         </div>
     );
 };
