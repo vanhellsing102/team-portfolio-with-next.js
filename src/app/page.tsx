@@ -2,10 +2,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      main
-
-
+    <div className='min-h-screen'>
+      
       nifad is writing this code
     </div>
   )
