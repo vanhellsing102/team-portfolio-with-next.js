@@ -23,3 +23,43 @@ export const ourData: OurData = [
         bio: "WebDeveloper | BookLover | PassionateTraveler | Resilient | SpirituallyGrounded"
     }
 ]
+
+
+
+type NavData = {
+    id: number;
+    title: string;
+    link: string;
+}[]
+export const navData: NavData = [
+    {
+        id: 1,
+        title: "Home",
+        link: "#"
+    },
+    {
+        id: 2,
+        title: "Introduction",
+        link: "#introduction"
+    },
+    {
+        id: 3,
+        title: "Skills",
+        link: "#skills"
+    },
+    {
+        id: 4,
+        title: "Projects",
+        link: "#projects"
+    },
+    {
+        id: 5,
+        title: "About Us",
+        link: "#about"
+    },
+    {
+        id: 6,
+        title: "Contact Us",
+        link: "#contact"
+    },
+]
