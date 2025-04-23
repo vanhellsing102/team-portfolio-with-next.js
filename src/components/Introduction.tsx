@@ -13,7 +13,7 @@ const Introduction = () => {
         {Array(ourData.length)
           .fill(0)
           .map((_, index) => (
-            <div className="md:w-[50%]  relative  px-1">
+            <div key={index} className="md:w-[50%]  relative  px-1">
 
             <div
               key={index}

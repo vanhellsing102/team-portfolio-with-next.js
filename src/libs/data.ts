@@ -13,12 +13,6 @@ type OurData = {
         logo?: any;
     }[]
 }[]
-type ProjectsData = {
-    id: number;
-    title: string;
-    image: string;
-    link: string;
-}[]
 
 export const ourData: OurData = [
     {
@@ -79,7 +73,6 @@ export const ourData: OurData = [
 ]
 
 
-
 type NavData = {
     id: number;
     title: string;
@@ -118,22 +111,116 @@ export const navData: NavData = [
     },
 ]
 
-export const projectsData:ProjectsData = [
+
+type OurSkills = {
+    id: number;
+    name: string;
+    image: string;
+}[]
+export const ourSkills: OurSkills = [
     {
         id: 1,
-        title: "QuraniQ-Ai agent",
-        image: "/images/project-bg.jpg",
-        link: "https://example.com/project1",
+        name: "html",
+        image: "/images/skills/html-Photoroom.png"
     },
     {
         id: 2,
-        title: "Project 2",
-        image: "/images/project-bg.jpg",
-        link: "https://example.com/project2",
+        name: "css",
+        image: "/images/skills/css-Photoroom.png"
     },
     {
         id: 3,
-        title: "Project 3",
-        image: "/images/project-bg.jpg",
-        link: "https://example.com/project3",
-    }]
+        name: "tailwing",
+        image: "/images/skills/tailwind-Photoroom.png"
+    },
+    {
+        id: 4,
+        name: "bootstrap",
+        image: "/images/skills/bootstrap-Photoroom.png"
+    },
+    {
+        id: 5,
+        name: "javascript",
+        image: "/images/skills/javascript-Photoroom.png"
+    },
+    {
+        id: 6,
+        name: "react js",
+        image: "/images/skills/react-Photoroom.png"
+    },
+    {
+        id: 7,
+        name: "react router",
+        image: "/images/skills/react router-Photoroom.png"
+    },
+    {
+        id: 8,
+        name: "redux",
+        image: "/images/skills/redux-Photoroom.png"
+    },
+    {
+        id: 9,
+        name: "node js",
+        image: "/images/skills/node js-Photoroom.png"
+    },
+    {
+        id: 10,
+        name: "express js",
+        image: "/images/skills/express js-Photoroom.png"
+    },
+    {
+        id: 11,
+        name: "mongodb",
+        image: "/images/skills/mongodb-Photoroom.png"
+    },
+    {
+        id: 12,
+        name: "tailwing",
+        image: "/images/skills/mongoose-Photoroom.png"
+    },
+    {
+        id: 13,
+        name: "firebase",
+        image: "/images/skills/firebase-Photoroom.png"
+    },
+    {
+        id: 14,
+        name: "axios",
+        image: "/images/skills/axios-Photoroom.png"
+    },
+    {
+        id: 15,
+        name: "figma",
+        image: "/images/skills/figma-Photoroom.png"
+    },
+    {
+        id: 16,
+        name: "github",
+        image: "/images/skills/github-Photoroom.png"
+    },
+    {
+        id: 17,
+        name: "git",
+        image: "/images/skills/git-Photoroom.png"
+    },
+    {
+        id: 18,
+        name: "tanstack query",
+        image: "/images/skills/tanstack-Photoroom.png"
+    },
+    {
+        id: 19,
+        name: "zustand",
+        image: "/images/skills/zustand-Photoroom.png"
+    },
+    {
+        id: 20,
+        name: "typescript",
+        image: "/images/skills/typescript-Photoroom.png"
+    },
+    {
+        id: 21,
+        name: "next js",
+        image: "/images/skills/next-Photoroom.png"
+    }
+]
