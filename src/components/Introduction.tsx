@@ -47,7 +47,7 @@ const Introduction = () => {
                     key={index}
                     href={link.link}
                     target="_blank"
-                    className="text-slate-400 text-xl hover:text-sky-400 transition-all duration-300"
+                    className="text-slate-400 text-xl  shadow ring-1 ring-sky-500/50 rounded-full  hover:text-sky-400 transition-all duration-300"
                     >
                       <link.logo />
                     </Link>
