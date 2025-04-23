@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 
 const Introduction = () => {
-  console.log(ourData);
+  // console.log(ourData);
   return (
     <div className="w-full min-h-96 ">
       <div className="w-full md:w-[80%] gap-2 min-h-96 md:flex   mx-auto">

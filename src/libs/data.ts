@@ -12,14 +12,12 @@ type OurData = {
 export const ourData: OurData = [
     {
         name: "Md Murad",
-        image: "../../public/images/murad.jpg",
-        bio: `(CSE)💻
-        My dream is to become a MERN stack developer
-        alert('😈');`
+        image: "/images/murad.jpg",
+        bio: `(CSE)💻 || My dream is to become a MERN stack developer || alert('😈');`
     },
     {
         name: "Md Nifad Uzzaman",
-        image: "../../public/images/murad.jpg",
+        image: "/images/nifad.jpg",
         bio: "WebDeveloper | BookLover | PassionateTraveler | Resilient | SpirituallyGrounded"
     }
 ]
