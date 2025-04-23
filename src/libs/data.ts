@@ -22,22 +22,22 @@ export const ourData: OurData = [
         socialLinks: [
             {
                 name: "Github",
-                link: "https://github.com/MdMuradHossain",
+                link: "https://github.com/vanhellsing102",
                 logo:FaGithub
             },
             {
                 name: "Facebook",
-                link: "https://www.facebook.com/murad.hossain.1",
+                link: "https://www.facebook.com/muradvanhellsing",
                  logo: FaFacebook
             },
             {
                 name: "Twitter",
-                link: "https://twitter.com/MuradHossain_",
+                link: "https://x.com/MdMurad72660848",
                 logo:FaSquareXTwitter
             },
             {
                 name: "LinkedIn",
-                link: "https://www.linkedin.com/in/md-murad-hossain-1b0a1b1b3/",
+                link: "https://www.linkedin.com/in/md-murad-4a9a862b4/",
                 logo:  FaLinkedin 
             }
         ]
