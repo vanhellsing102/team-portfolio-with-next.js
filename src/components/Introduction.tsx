@@ -4,7 +4,7 @@ import { ourData } from "../libs/data";
 import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
-
+import {motion} from "motion/react"
 const Introduction = () => {
   // console.log(ourData);
   return (
@@ -13,7 +13,10 @@ const Introduction = () => {
         {Array(ourData.length)
           .fill(0)
           .map((_, index) => (
-            <div key={index} className="md:w-[50%]  relative  px-1">
+            <div
+           
+            key={index} className="md:w-[50%]  relative  px-1"
+            >
 
             <div
               key={index}
