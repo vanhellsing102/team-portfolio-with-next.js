@@ -1,3 +1,4 @@
+
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -13,7 +14,12 @@ type OurData = {
         logo?: any;
     }[]
 }[]
-
+type ProjectsData = {
+    id: number;
+    title: string;
+    image: string;
+    link: string;
+}[]
 export const ourData: OurData = [
     {
         name: "Md Murad",
@@ -224,3 +230,23 @@ export const ourSkills: OurSkills = [
         image: "/images/skills/next-Photoroom.png"
     }
 ]
+
+export const projectsData:ProjectsData = [
+    {
+        id: 1,
+        title: "QuraniQ-Ai agent",
+        image: "/images/project-bg.jpg",
+        link: "https://example.com/project1",
+    },
+    {
+        id: 2,
+        title: "Project 2",
+        image: "/images/project-bg.jpg",
+        link: "https://example.com/project2",
+    },
+    {
+        id: 3,
+        title: "Project 3",
+        image: "/images/project-bg.jpg",
+        link: "https://example.com/project3",
+    }]
