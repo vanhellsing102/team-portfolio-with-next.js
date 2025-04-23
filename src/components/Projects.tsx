@@ -12,7 +12,7 @@ type ProjectsData = {
 }
 const Projects = () => {
     return (
-        <div className='w-full md:w-[80%] px-4 flex flex-col md:flex-row gap-4 justify-between mx-auto py-12 group '>
+        <div id='projects' className='w-full md:w-[80%] px-4 flex flex-col md:flex-row gap-4 justify-between mx-auto py-12 group '>
             <h2 
             className='text-xl absolute font-bold'>Projects</h2>
             {

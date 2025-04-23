@@ -93,7 +93,7 @@ export const navData: NavData = [
     {
         id: 2,
         title: "Introduction",
-        link: "#introduction"
+        link: "#"
     },
     {
         id: 3,
@@ -156,7 +156,7 @@ export const ourSkills: OurSkills = [
     },
     {
         id: 7,
-        name: "react router",
+        name: "router",
         image: "/images/skills/react router-Photoroom.png"
     },
     {
@@ -211,7 +211,7 @@ export const ourSkills: OurSkills = [
     },
     {
         id: 18,
-        name: "tanstack query",
+        name: "tanstack",
         image: "/images/skills/tanstack-Photoroom.png"
     },
     {

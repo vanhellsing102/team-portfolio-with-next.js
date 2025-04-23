@@ -9,7 +9,7 @@ const Introduction = () => {
   // console.log(ourData);
   return (
     <div >
-      <div className="w-full md:w-[80%] space-y-7 md:space-x-4 min-h-96 md:flex px-6 mx-auto">
+      <div id="introduction" className="w-full md:w-[80%] space-y-7 md:space-x-4 min-h-96 md:flex px-6 mx-auto">
         {Array(ourData.length)
           .fill(0)
           .map((_, index) => (
