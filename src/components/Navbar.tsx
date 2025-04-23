@@ -11,7 +11,7 @@ const Navbar = () => {
             <div>
                 <Link href={'/'} className='text-transparent text-5xl bg-clip-text bg-gradient-to-r from-[#0C7CBA] to-[#1F516C] font-bold'>TeamP</Link>
             </div>
-            <div className='border backdrop-blur-sm py-2 px-5 rounded-lg fixed right-12 hidden md:block'>
+            <div className='border backdrop-blur-sm py-2 px-5 rounded-lg fixed right-12 hidden md:block z-10'>
                 <ul className='flex gap-3'>
                     {
                         navData.map(navItem =>
@@ -24,7 +24,7 @@ const Navbar = () => {
             </div>
 
             {/* responsive navbar */}
-            <div className='md:hidden block fixed right-12'>
+            <div className='md:hidden block fixed right-12 z-10'>
                 <div className='relative' >
                     <CgMenuLeft onClick={() => setOpenMenu(!openMenu)} className='text-2xl text-white'></CgMenuLeft>
                     {
