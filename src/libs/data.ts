@@ -13,6 +13,12 @@ type OurData = {
         logo?: any;
     }[]
 }[]
+type ProjectsData = {
+    id: number;
+    title: string;
+    image: string;
+    link: string;
+}[]
 
 export const ourData: OurData = [
     {
@@ -111,3 +117,23 @@ export const navData: NavData = [
         link: "#contact"
     },
 ]
+
+export const projectsData:ProjectsData = [
+    {
+        id: 1,
+        title: "QuraniQ-Ai agent",
+        image: "/images/project-bg.jpg",
+        link: "https://example.com/project1",
+    },
+    {
+        id: 2,
+        title: "Project 2",
+        image: "/images/project-bg.jpg",
+        link: "https://example.com/project2",
+    },
+    {
+        id: 3,
+        title: "Project 3",
+        image: "/images/project-bg.jpg",
+        link: "https://example.com/project3",
+    }]
