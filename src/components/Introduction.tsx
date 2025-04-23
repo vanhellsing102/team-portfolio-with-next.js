@@ -8,8 +8,8 @@ import { Typewriter } from "react-simple-typewriter";
 const Introduction = () => {
   // console.log(ourData);
   return (
-    <div className="w-full min-h-96 ">
-      <div className="w-full md:w-[80%] space-y-7 md:space-x-4 min-h-96 md:flex px-6   mx-auto">
+    <div>
+      <div className="w-full md:w-[80%] space-y-7 md:space-x-4 min-h-96 md:flex px-6 mx-auto">
         {Array(ourData.length)
           .fill(0)
           .map((_, index) => (
@@ -27,7 +27,7 @@ const Introduction = () => {
                 />
                 <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-bold">
                   {/* {ourData[index].name} */}
-                  <span>Hi, I'm</span> <Typewriter
+                  <span>Hi, {`I'm`}</span> <Typewriter
                     words={[`${ourData[index].name}`]}
                     loop={true}
                     cursorStyle="_"
