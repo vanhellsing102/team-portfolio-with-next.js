@@ -1,21 +1,18 @@
 import React from "react";
 import { ourData } from "../libs/data";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 
 const Introduction = () => {
   // console.log(ourData);
   return (
     <div className="w-full min-h-96 ">
-      <div className="w-full md:w-[80%] gap-2 min-h-96 md:flex   mx-auto">
+      <div className="w-full md:w-[80%] space-y-7 md:space-x-4 min-h-96 md:flex px-6   mx-auto">
         {Array(ourData.length)
           .fill(0)
           .map((_, index) => (
-            <div key={index} className="min-h-96 flex-col flex md:w-[50%]  backdrop-blur-3xl overflow-hidden rounded-xl p-4 shadow-slate-900/50">
-              <div className="flex flex-col  h-full items-center w-full  text-2xl ">
+            <div key={index} className="min-h-96 pb-12 flex-col flex md:w-[50%]  backdrop-blur-3xl overflow-hidden rounded-xl p-4 shadow-slate-900/50">
+              <div className="flex flex-col gap-1 h-full items-center w-full  text-2xl ">
                 <Image
                   src={ourData[index].image}
                   alt="dj"
@@ -27,6 +24,15 @@ const Introduction = () => {
                 <p className="text-sm text-slate-400">
                   {ourData[index].bio}
                 </p>
+              <div className="flex gap-12 justify-center w-full  mt-12 ">
+                {
+                  ourData[index].socialLinks.map((link, index) => (
+                    <Link key={index} href={link.link} target="_blank" className="text-slate-400 text-xl hover:text-sky-400 transition-all duration-300">
+                      <link.logo/>
+                    </Link>
+                  ))
+                }
+              </div>
               </div>
             </div>
           ))}
