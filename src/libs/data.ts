@@ -12,7 +12,9 @@ type OurData = {
         name: string;
         link: string;
         logo?: any;
-    }[]
+    }[],
+    education: string;
+    id: number
 }[]
 type ProjectsData = {
     id: number;
@@ -21,7 +23,8 @@ type ProjectsData = {
     link: string;
 }[]
 export const ourData: OurData = [
-    {
+    {   
+        id: 1,
         name: "Md Murad",
         image: "/images/murad.jpg",
         bio: `(CSE)💻 || My dream is to become a MERN stack developer || alert('😈');`,
@@ -46,10 +49,12 @@ export const ourData: OurData = [
                 link: "https://www.linkedin.com/in/md-murad-4a9a862b4/",
                 logo:  FaLinkedin 
             }
-        ]
+        ],
+        education:"Diploma in computer science and technology from Thakurgoan polytechnic institute."
 
     },
     {
+        id:2,
         name: "Md Nifad Uzzaman",
         image: "/images/nifad.jpg",
         bio: "WebDeveloper | BookLover | PassionateTraveler | Resilient | SpirituallyGrounded",
@@ -74,7 +79,9 @@ export const ourData: OurData = [
                 link: "https://www.linkedin.com/in/nifad2005",
                 logo: FaLinkedin
             }
-        ]
+        ],
+        education:"Diploma in computer science and technology from Dinajpur polytechnic institute."
+
     }
 ]
 

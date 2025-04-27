@@ -11,12 +11,12 @@ const page = () => {
   return (
     <div className='min-h-screen'>
       <Navbar/>
-      <Introduction></Introduction>
-      <Skills></Skills>
-      <Projects></Projects>
-      <About></About>
-      <Contact></Contact>
-      <Footer></Footer>
+      <Introduction/>
+      <Skills/>
+      <Projects/>
+      <About/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }
