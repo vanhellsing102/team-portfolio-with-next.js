@@ -5,8 +5,9 @@ import { ourData, ourSkills } from '../libs/data';
 import { motion } from 'motion/react';
 const About = () => {
     return (
-        <div className='w-full xl:w-[80%] px-8 min-h-40 mx-auto  flex flex-col md:flex-row gap-4 justify-between ' id='about'>
-            
+        <div id='about'>
+            <h2 className='text-center text-4xl font-bold mb-3'>About us</h2>
+            <div className='w-full xl:w-[80%] px-8 min-h-40 mx-auto  flex flex-col md:flex-row gap-4 justify-between ' >
             {ourData?.map((data)=> (
                 <div key={data.name} className='w-full sm:w-[80%] px-8 mx-auto md:w-[50%] min-h-40 backdrop-blur-md shadow-xl ring-1 
                     rounded-lg py-4 ring-sky-500/20 bg-gradient-to-r from-sky-400/10 shadow-sky-400/10 hover:shadow-sky-400/20 transition-all duration-300 to-sky-800
@@ -42,6 +43,7 @@ const About = () => {
 
           
             
+        </div>
         </div>
     );
 };
