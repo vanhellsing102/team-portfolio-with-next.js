@@ -246,9 +246,9 @@ export const ourSkills: OurSkills = [
 export const projectsData:ProjectsData = [
     {
         id: 1,
-        title: "QuraniQ-Ai agent",
-        image: "/images/project-bg.jpg",
-        link: "https://example.com/project1",
+        title: "TeamP",
+        image: "/images/projects/teamP.png",
+        link: "https://murad-nifad.vercel.app",
     },
     {
         id: 2,
