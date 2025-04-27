@@ -9,7 +9,7 @@ import Contact from '../components/Contact'
 
 const page = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen space-y-12'>
       <Navbar/>
       <Introduction/>
       <Skills/>
