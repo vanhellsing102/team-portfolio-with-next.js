@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import Projects from '../components/Projects'
 import About from '../components/About'
 import Contact from '../components/Contact'
+import Github from '../components/Github'
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
       <Introduction/>
       <Skills/>
       <Projects/>
+      <Github></Github>
       <About/>
       <Contact/>
       <Footer/>
