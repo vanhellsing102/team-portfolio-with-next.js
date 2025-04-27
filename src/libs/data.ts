@@ -114,11 +114,16 @@ export const navData: NavData = [
     },
     {
         id: 5,
+        title: "Github",
+        link: "#github"
+    },
+    {
+        id: 6,
         title: "About Us",
         link: "#about"
     },
     {
-        id: 6,
+        id: 7,
         title: "Contact Us",
         link: "#contact"
     },
