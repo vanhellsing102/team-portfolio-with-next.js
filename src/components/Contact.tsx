@@ -1,15 +1,24 @@
 "use client"
+import axios from 'axios';
 import React, { FormEvent } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
     const handleSendMessage = (e: FormEvent<HTMLFormElement>) =>{
         e.preventDefault();
         const form = new FormData(e.currentTarget);
-        const name = form.get("name");
-        const email = form.get("email");
-        const message = form.get("message");
-        const contactEmail = form.get("contactEmail");
-        console.log(name, email, message, contactEmail);
+        const name = form.get("name") as string;
+        const email = form.get("email") as string;
+        const contactEmail = form.get("contactEmail") as string;
+        const message = form.get("message") as string;
+        const newMessage = {
+            name, email, contactEmail, message
+        }
+        // console.log(newMessage);
+        axios.post('/api/contact', newMessage)
+        .then(res =>{
+            toast.success(res.data.message);
+        })
     }
     return (
         <div id='contact' className='md:w-[80%] w-full mx-auto'>
@@ -45,6 +54,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            <Toaster></Toaster>
         </div>
     );
 };
